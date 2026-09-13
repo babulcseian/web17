@@ -1,0 +1,77 @@
+---
+layout: default
+---
+{{ content }}
+
+<!--
+  TEACHING PAGE
+  =============
+  This page currently shows only what's confirmed in your own bio text
+  (home.html): lecturer at Micro Institute of Technology, 2018-2019.
+
+  To add real course details, create _data/teaching_data.yml with entries
+  like:
+    - {institution: "Micro Institute of Technology", location: "Bangladesh",
+       period: "2018-2019", course: "Course Name Here",
+       level: "e.g. Undergraduate", description: "optional detail"}
+
+  Then this page can loop over them properly. Nothing is invented here —
+  add your real courses when you're ready.
+-->
+
+<style>
+.teach-hero{
+  background:linear-gradient(135deg,#eaf6fd,#eaf6fd);
+  border:1px solid #aed6f1;border-radius:16px;
+  padding:1.4rem 1.6rem;margin-bottom:2rem;
+  display:flex;align-items:center;gap:1rem}
+.teach-hero-icon{font-size:2.2rem;flex-shrink:0}
+.teach-hero-text h2{font-size:1.3rem;font-weight:900;color:#2c3e50;margin:0 0 .2rem}
+.teach-hero-text p{font-size:.9rem;color:#5d7a94;margin:0}
+
+.teach-card{
+  display:flex;align-items:flex-start;gap:1rem;
+  padding:1.1rem 1.3rem;border-radius:14px;
+  background:#fff;border:1px solid #e2e8f0;
+  box-shadow:0 4px 16px rgba(0,0,0,.04)}
+.teach-icon{
+  width:46px;height:46px;border-radius:12px;flex-shrink:0;
+  background:linear-gradient(135deg,#2980b9,#21618c);
+  display:grid;place-items:center;font-size:1.2rem;
+  box-shadow:0 4px 12px rgba(13,148,136,.25)}
+.teach-info h3{font-size:1.02rem;font-weight:800;color:#2c3e50;margin:0 0 .2rem}
+.teach-period{
+  font-size:.78rem;font-weight:700;color:#2980b9;
+  background:#eaf6fd;border:1px solid #aed6f1;
+  padding:.15rem .5rem;border-radius:999px;display:inline-block;margin-bottom:.2rem}
+.teach-loc{font-size:.85rem;color:#5d7a94}
+
+.teach-placeholder{
+  margin-top:1.2rem;padding:1rem 1.2rem;border-radius:12px;
+  background:#f9fafb;border:1px dashed #cbd5e1;
+  font-size:.87rem;color:#5d7a94;line-height:1.6}
+</style>
+
+<div class="teach-hero">
+  <div class="teach-hero-icon">👨‍🏫</div>
+  <div class="teach-hero-text">
+    <h2>Teaching Experience</h2>
+    <p>Confirmed teaching history — details below are being added.</p>
+  </div>
+</div>
+
+<div class="teach-card">
+  <div class="teach-icon">🏫</div>
+  <div class="teach-info">
+    <h3>Micro Institute of Technology</h3>
+    <span class="teach-period">2018 – 2019</span>
+    <div class="teach-loc">📍 Bangladesh · Lecturer</div>
+  </div>
+</div>
+
+<div class="teach-placeholder">
+  Specific courses taught, student levels, and any other teaching
+  experience can be added here — edit <code>_layouts/teaching.html</code>
+  once <code>_data/teaching_data.yml</code> is filled in with real course
+  records.
+</div>
